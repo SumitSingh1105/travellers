@@ -11,7 +11,9 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: '*',
+  origin: ["http://localhost:5173",
+          "http://localhost:3000",
+          "https://travellers-q3qrcyjp7-sumit-singhs-projects.vercel.app"],
   credentials: true,
 }));
 app.use(express.json());
